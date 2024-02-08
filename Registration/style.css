@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: qetalon;
+}
+@font-face {
+    font-family: anabelle;
+    src: url(fonts/anabelle.ttf);
+}
+@font-face {
+    font-family: qetalon;
+    src: url(fonts/qetalon.otf);
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(img/building6.jpg);
+    background-size: 100%;
+    animation: back 30s linear infinite;
+    filter: brightness(0.3);
+}
+
+@keyframes back {
+    0%,100% {
+        background-size: 100%;
+        background-position: center center;
+    }
+
+    50% {
+        background-size: 150%;
+        background-position: top left;
+    }
+}
+
+form {
+    width: 500px;
+    height: auto;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+form::after {
+    content: '';
+    width: 10%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.09);
+    position: absolute;
+    top: -10%;
+    left: -100%;
+    filter: blur(10px);
+    transform: rotate(-20deg);
+    animation: shadow 3s linear infinite;
+}
+
+@keyframes shadow {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 150%; 
+    }
+}
+
+form > h2 {
+    font-size: 100px;
+    font-family: anabelle;
+    color:deepskyblue;
+    animation: fortext 3s linear infinite;
+}
+
+@keyframes fortext {
+    0%,100% {
+        color: deepskyblue;
+        transform: translateY(0);
+    }
+
+    50% {
+        color: transparent;
+        -webkit-text-stroke: 1px deepskyblue;
+        transform: translateY(-10px);
+    }
+}
+
+.for-name {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.for-name > input {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: .3px .3px 0 0 deepskyblue inset, -.6px -.6px 0 0 black inset;
+    
+}
+
+form > input {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: .3px .3px 0 0 deepskyblue inset, -.6px -.6px 0 0 black inset;
+    
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+input[type="radio"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]::after {
+    content: '';
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: deepskyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s;
+}
+
+input[type="radio"]:checked::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+input[type="radio"]:checked {
+    border: 3px inset white;
+}
+
+form > a {
+    font-size: 10px;
+    color: deepskyblue;
+    text-align: center;
+}
+
+.agree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: deepskyblue;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+input[type="checkbox"]::before {
+    content: '\2714';
+    font-size: 18px;
+    position: absolute;
+    top: -60%;
+    left: -50%;
+    transform: translate(-50%,-50%);
+    transition: .5s ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%) rotate3d(1,2,1,360deg);
+    color: deepskyblue;
+}
+
+input[type="checkbox"]:checked {
+    background: black;
+    border: .1px deepskyblue;
+}
+
+form > button {
+    width: 150px;
+    height: 45px;
+    background: black;
+    color: #212121;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .5s ease-in;
+}
+
+.letter {
+    transition: .5s;
+    transition-delay: calc(var(--i) * 100ms);
+    display: inline-block;
+}
+
+form > button:hover .letter {
+    color: deepskyblue;
+    transform: rotateY(360deg);
+}
+
+
+
+/* 1rem-11px */

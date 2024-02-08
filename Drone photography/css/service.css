@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+/* Rules */
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Header menu */
+/* header.css */
+
+
+/* Service */
+
+.main1 {
+
+    background-color: #3f3f3f21;
+    color: white;
+    background-image: url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg3.png);
+    background-position: bottom right;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arrow1,
+.descr,
+.arrow2 {
+    margin-top: 120px;
+    /* padding: 20px; */
+
+}
+
+.main1 .descr {
+    text-align: center;
+
+}
+
+.main1 .descr h1 {
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+
+}
+
+.main1 .descr p {
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.main1 .descr button {
+    padding: 17px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(231, 136, 70) 20%, rgba(213, 122, 171) 74%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.main1 .descr button:hover {
+    opacity: 0.8;
+}
+
+.arrow1,
+.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 300px;
+}
+
+.arrow2 {
+    margin-left: 300px;
+}
+
+.arrow1 p,
+.arrow2 p {
+    font-size: 40px;
+
+}
+
+.arrow1 p:hover,
+.arrow2 p:hover {
+    color: #E6884C;
+}
+
+
+/* Main 2 */
+
+.main3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 170px;
+    margin-bottom: 80px;
+}
+
+.main3-img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.main3-pic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+
+}
+
+
+.main3-drone-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 5px;
+    /* background-image: linear-gradient(to right, rgb(222, 150, 17), rgb(227, 7, 198)); */
+    background: linear-gradient(90deg, rgba(231, 136, 70) 20%, rgba(213, 122, 171) 74%);
+    padding: 15px 17px;
+    border-radius: 10px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+.main3-drone-number {
+    font-family: 'Corben', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin: 7px;
+}
+
+.main3-drone-text {
+    /* font-family: 'Corben', cursive; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.main3-text {
+    margin: 30px;
+}
+
+.main3-text1 {
+    color: #f2f2f2;
+}
+
+.main3-text1 h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+}
+
+.main3-text1 p {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+
+
+.main3-text-list-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main3-text-list-icons .icon1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 2px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-betwee;
+    margin-bottom: 5px;
+}
+
+.main3-text-list-icons .icon1 i {
+    /* font-size: 20px; */
+    text-align: center;
+    width: 45px;
+    color: #f2f2f2;
+    padding: 9px;
+    border-radius: 7px;
+    margin-right: 13px;
+    background: linear-gradient(90deg, rgba(231, 136, 70) 20%, rgba(213, 122, 171) 74%);
+
+}
+
+.main3-text-list-icons .icon1 p {
+    margin-right: 50px;
+}
+
+p {
+    padding: 10px 0px;
+    color: #f2f2f2;
+}
+
+
+
+/* Main 3 */
+
+.main2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    margin-bottom: 50px;
+}
+
+.main2-1-cards {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgb(61, 60, 60);
+    width: 250px;
+    height: auto;
+}
+
+.main2-1-cards:hover {
+    border: 1px blueviolet solid;
+}
+
+.title-card {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.main2-1-cards p,
+.title-card {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.main2-1-cards p {
+
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.main2-1-cards img {
+    margin: 10px;
+    height: 50px;
+    width: auto;
+}
+
+.read-more {
+    color: rgb(159, 68, 245);
+    cursor: pointer;
+}
+
+/* Main 4 */
+
+
+.main6 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    background-image: url('https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/infinity-intersection-an-aerial-view-of-the-freew-2021-08-28-08-40-27-utc.jpg');
+}
+
+.main6 .main6-1 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.622);
+    padding: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main6 .main6-1 .main6-1-img {
+    border-radius: 50%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.main6 .main6-1 .main6-1-p {
+    text-align: center;
+    width: 1000px;
+    line-height: 1.5;
+}
+
+.main6 .main6-1 .main6-1-h4 {
+    font-size: 27px;
+
+}
+
+
+.main6 .main6-1 .main6-1-stars {
+    color: gold;
+    padding-bottom: 15px;
+}
+
+/* Quest Box */
+
+.quest-box {
+    margin: auto;
+    background-color: #000;
+    background-image: url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg.png);
+    width: 950px;
+    /* padding: 10px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.quest-box .quest-descr {
+    line-height: 1.5;
+    margin: 50px;
+}
+
+.quest-box .quest-descr h2 {
+    color: #E6884C;
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: 2px;
+}
+
+.quest-box .quest-descr h1 {
+    color: #fff;
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: 2px;
+}
+
+.quest-button button {
+    padding: 17px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(231, 136, 70) 20%, rgba(213, 122, 171) 74%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+
+
+
+/* Footer */
+/* footer.css */
+
+/* Responsive */
+
+@media (min-width: 300px){
+
+    .arrow1,.arrow2 {
+        margin-top: 182px;
+    }
+    
+    .arrow1 {
+        margin-right: 10px;
+    }
+    
+    .arrow2 {
+        margin-left:  10px;
+    }
+    
+    .arrow1 p, .arrow2 p {
+        font-size: 20px;
+    }
+    .main3 {
+        flex-wrap: wrap;
+      }
+    
+      .main3-pic img {
+        width: 300px;
+      }
+
+      .main6 {
+        width: 500px;
+      }
+      .main6 .main6-1 .main6-1-p {
+        width: 200px;
+      }
+      .quest-box {
+        width: 300px;
+        text-align: center;
+      }
+      .quest-button button {
+        margin-top: 5px;
+      }
+}
+@media (min-width: 576px){
+
+    .arrow1,.arrow2 {
+        margin-top: 182px;
+    }
+    
+    .arrow1 {
+        margin-right: 50px;
+    }
+    
+    .arrow2 {
+        margin-left:  50px;
+    }
+    
+    .arrow1 p, .arrow2 p {
+        font-size: 40px;
+    
+    }
+
+    .main3 {
+        flex-wrap: wrap;
+      }
+      .main3-pic img {
+        width: 500px;
+      }
+
+      .main6 {
+        width: auto;
+      }
+      .main6 .main6-1 .main6-1-p {
+        width: 500px;
+      }
+}
+@media (min-width: 768px){
+    .arrow1,.arrow2 {
+        margin-top: 182px;
+    }
+    
+    .arrow1 {
+        margin-right: 100px;
+    }
+    
+    .arrow2 {
+        margin-left:  100px;
+    }
+    
+    .arrow1 p, .arrow2 p {
+        font-size: 40px;
+    
+    }
+
+    .main3 {
+        flex-wrap: wrap;
+      }
+      .main3-pic img {
+        width: 700px;
+      }
+
+      .main6 {
+        width: auto;
+      }
+      .main6 .main6-1 .main6-1-p {
+        width: 500px;
+      }
+
+      .quest-box {
+        width: 700px;
+      }
+      .quest-button button {
+        margin-top: 70px;
+      }
+}
+@media (min-width: 992px){
+    .arrow1,.arrow2 {
+        margin-top: 182px;
+    }
+    
+    .arrow1 {
+        margin-right: 200px;
+    }
+    
+    .arrow2 {
+        margin-left:  200px;
+    }
+    
+    .arrow1 p, .arrow2 p {
+        font-size: 40px;
+    
+    }
+
+    .main3 {
+        flex-wrap: wrap;
+      }
+      .main3-pic img {
+        width: 900px;
+      }
+
+      .main6 {
+        width: auto;
+      }
+      .main6 .main6-1 .main6-1-p {
+        width: 900px;
+      }
+
+      .quest-box {
+        width: 700px;
+      }
+      .quest-button button {
+        margin-top: 70px;
+      }
+      
+}
+@media (min-width: 1200px){
+    .arrow1,.arrow2 {
+        margin-top: 182px;
+    }
+    
+    .arrow1 {
+        margin-right: 300px;
+    }
+    
+    .arrow2 {
+        margin-left:  300px;
+    }
+    
+    .arrow1 p, .arrow2 p {
+        font-size: 40px;
+    
+    }
+
+      .main3-pic img {
+        width: 500px;
+        height: auto;
+      }
+
+      .main3 {
+        flex-wrap: nowrap;
+    
+      }
+
+      .main6 {
+        width: auto;
+      }
+      .main6 .main6-1 .main6-1-p {
+        width: 1000px;
+      }
+
+      .quest-button button {
+        margin-top: 70px;
+      }
+}
+@media (min-width: 1400px){
+    .arrow1,.arrow2 {
+        margin-top: 182px;
+    }
+    
+    .arrow1 {
+        margin-right: 300px;
+    }
+    
+    .arrow2 {
+        margin-left:  300px;
+    }
+    
+    .arrow1 p, .arrow2 p {
+        font-size: 40px;
+    
+    }
+
+    .main3-pic img {
+        width: 500px;
+        height: auto;
+      }
+      .main3 {
+        flex-wrap: nowrap;
+        flex-direction: row;
+      }
+
+      .main6 {
+        width: auto;
+      }
+      .main6 .main6-1 .main6-1-p {
+        width: 1000px;
+      }
+
+      .quest-button button {
+        margin-top: 70px;
+      }
+}

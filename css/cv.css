@@ -1,0 +1,473 @@
+body {
+    font: 400 16px/1.5 'Verdana', sans-serif;
+    background-color: #ccc9c9;
+}
+
+/* img {
+    max-width: 100%;
+} */
+
+
+
+/* Rules */
+.offcanvas-body {
+   background-color:  #637c8d;
+}
+.offcanvas-header {
+    background-color:  #556979;
+}
+.section {
+    padding: 45px 0;
+}
+
+
+
+/* Main */
+section#about {
+    padding-top: 80px;
+}
+section#about .container{
+    background-color: #98abb885;
+    border-radius: 25%;
+}
+section#about .name {
+    padding: 20px;
+    margin-top: -7px;
+    font-size: 35px;
+    font-family: 'Noto Sans Armenia', sans-serif;
+    
+}
+section#about img {
+    width: 340px;
+    height: 300px;
+    border-radius: 70%;
+    margin-left: 60px;
+    margin-top: 8px;
+}
+section#about .bio {
+    margin-top: 20px;
+}
+section#about .contacts {
+    margin-top: 20px;
+    margin-right: 60px;
+
+}
+section#about .contacts a {
+    border-radius: 100px;
+
+}
+section#portfolio {
+    margin-top: 40px;
+    padding-top: 80px;
+    
+}
+.section#portfolio .card {
+   border-width: 12px;
+   border-radius: 2%;
+   background-color: rgb(175, 183, 224);
+   margin-top: 60px;
+}
+.section#portfolio .card-body {
+    background-color: rgb(175, 183, 224);
+    
+}
+
+section#portfolio .photos {
+    background-color: rgb(187, 187, 243);
+    width: 800px;
+    
+
+}
+section#portfolio .name {
+    font-size: 26px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    border-left: 5px solid rgb(136, 146, 201);
+    width: 200px;
+}
+section#portfolio .photos img {
+    margin-bottom: 15px;
+    width: 800px;
+    
+}
+
+section#education .name {
+    text-align: center;
+    font-size: 30px;
+    border-left: 5px solid rgb(136, 146, 201);
+    width: 230px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    
+}
+
+
+section#education .list-group-item {
+    background-color: rgba(148, 156, 199, 0.342);
+}
+
+
+section#skills .name {
+    text-align: center;
+    font-size: 30px;
+    border-left: 5px solid rgb(136, 146, 201);
+    width: 230px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+/* Skills Section */
+
+.all{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+
+
+  }
+  .circle-wrap {
+    flex-direction:row;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3,
+  .circle-wrap .circle .fill-4,
+  .circle-wrap .circle .fill-5,
+  .circle-wrap .circle .fill-6,
+  .circle-wrap .circle .fill-7,
+  .circle-wrap .circle .fill-8,
+  .circle-wrap .circle .fill-9,
+  .circle-wrap .circle .fill-10,
+  .circle-wrap .circle .fill-11,
+  .circle-wrap .circle .fill-12 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .skillname p {
+    
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+  }
+ 
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #212020;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  .mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #ec0c0c;
+  }
+  
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(158deg);
+  }
+  
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(158deg);
+    }
+  }
+  
+  /* 2nd bar */
+  
+  .mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: yellow;
+  }
+  
+  .mask.full-2,
+  .circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(150deg);
+  }
+  
+  @keyframes fill-2{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+  
+  /* 3rd progress bar */
+  .mask .fill-3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #23b9ea;
+  }
+  
+  .mask.full-3,
+  .circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(140deg);
+  }
+  
+  @keyframes fill-3{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(140deg);
+    }
+  }
+  /* 4rd progress bar */
+  .mask .fill-4 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #50c27c;
+  }
+  
+  .mask.full-4,
+  .circle .fill-4 {
+    animation: fill-4 ease-in-out 3s;
+    transform: rotate(100deg);
+  }
+  
+  @keyframes fill-4{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(100deg);
+    }
+  }
+  /* 5rd progress bar */
+  .mask .fill-5 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #8243ca;
+  }
+  
+  .mask.full-5,
+  .circle .fill-5 {
+    animation: fill-5 ease-in-out 3s;
+    transform: rotate(155deg);
+  }
+  
+  @keyframes fill-5{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(155deg);
+    }
+  }
+  
+  /* 6rd progress bar */
+  .mask .fill-6 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #e774d8;
+  }
+  
+  .mask.full-6,
+  .circle .fill-6 {
+    animation: fill-6 ease-in-out 3s;
+    transform: rotate(150deg);
+  }
+  
+  @keyframes fill-6{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+  /* 7rd progress bar */
+  .mask .fill-7 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #3bf0d2;
+  }
+  
+  .mask.full-7,
+  .circle .fill-7 {
+    animation: fill-7 ease-in-out 3s;
+    transform: rotate(180deg);
+  }
+  
+  @keyframes fill-7{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  /* 8rd progress bar */
+  .mask .fill-8 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #e6810f;
+  }
+  
+  .mask.full-8,
+  .circle .fill-8 {
+    animation: fill-8 ease-in-out 3s;
+    transform: rotate(180deg);
+  }
+  
+  @keyframes fill-8{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+   /* 9nd bar */
+  
+   .mask .fill-9 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: rgb(97, 138, 128);
+  }
+  
+  .mask.full-9,
+  .circle .fill-9 {
+    animation: fill-9 ease-in-out 3s;
+    transform: rotate(150deg);
+  }
+  
+  @keyframes fill-9{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+
+   /* 10rd progress bar */
+   .mask .fill-10 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #32bb86;
+  }
+  
+  .mask.full-10,
+  .circle .fill-10 {
+    animation: fill-5 ease-in-out 3s;
+    transform: rotate(150deg);
+  }
+  
+  @keyframes fill-10{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+   /* 11rd progress bar */
+   .mask .fill-11 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #72a52f;
+  }
+  
+  .mask.full-11,
+  .circle .fill-11 {
+    animation: fill-11 ease-in-out 3s;
+    transform: rotate(150deg);
+  }
+  
+  @keyframes fill-11{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+
+  /* 12rd progress bar */
+  .mask .fill-12 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #6771cf;
+  }
+  
+  .mask.full-12,
+  .circle .fill-12 {
+    animation: fill-12 ease-in-out 3s;
+    transform: rotate(155deg);
+  }
+  
+  @keyframes fill-12{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(155deg);
+    }
+  }
+/* Breakpoints */
+
+
+@media (min-width: 576px) {
+    section#about .bio {
+        margin-top: 20px;
+    }
+    section#about .contacts {
+        margin-top: 20px;
+        margin-right: 20px;
+    
+    }
+}
+
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 992px) {
+    
+}
+@media (min-width: 1200px) {
+    section#about img {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    
+}
+

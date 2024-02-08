@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1;
+    background: rgb(175, 106, 2);
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.home {
+    background-color: white;
+    color: rgb(175, 106, 2);
+    padding: 0px 12px;
+    border-radius: 5px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+.icons i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.search > i {
+position: absolute;
+color: black;
+font-size: 15px;
+left: 2px;
+top: 2px;
+color: rgb(175, 106, 2);
+}
+
+::placeholder{
+    padding-left: 13px;
+    font-size: 13px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(img/imag2.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+h1 {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    text-align: right;
+    color: white;
+    font-size: 60px;
+}
+
+.show {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.show p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 390px;
+    bottom: 295px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.show button {
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 250px;
+    left: 390px;
+    background: rgb(175, 106, 2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.about {
+    background: rgb(2, 8, 29);
+    color: white;
+}
+
+.about h2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.about-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content > .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.about-content > .item:first-child {
+    background: rgb(175, 106, 2);
+}
+
+.about-content > .item:nth-child(2){
+    background: rgb(2, 8, 29);;
+}
+
+.about-content > .item:nth-child(3) {
+    background: rgb(175, 106, 2);
+}
+.about-content > .item i {
+    font-size: 40px;
+    background: white;
+    padding: 15px;
+    border-radius: 50%;
+    color: rgb(175, 106, 2);
+}
+.service {
+    background: rgb(2, 8, 29);
+    color: white;
+    padding: 30px;
+}
+.service > .text h2,p{
+    text-align: center;
+    padding: 10px;
+}
+.service > .text h2 {
+    font-size: 50px;
+}
+.service-content {
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.service-content > .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+}
+.service-content > .item:first-child {
+    background: rgb(165, 101, 49);
+}
+.service-content > .item:nth-child(2) {
+    background: rgb(175, 106, 2);
+}
+.service-content > .item:nth-child(3) {
+    background: rgb(165, 101, 49);
+}
+.service-content > .item p{
+    text-align: center;
+}
+
+.service-content > .item i {
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+}
+
+.service-content > .item a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.service-content > .item h2 {
+color: white;
+font-size: 30px;
+}
+
+.service-content > .item > .ov {
+    width: 100%;
+    height: 70px;
+    border-radius: 7px 3px 103px;
+    background: rgba(255, 255, 255, 0.349);
+}
+.actions {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(2, 8, 29);
+    padding: 30px;
+}
+
+.actions > h2 {
+    color: white;
+    font-size: 40px;
+    text-align:center;
+    padding: 30px;
+}
+.action-content {
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    min-height: 100vh;
+    gap: 15px;
+    margin: auto;
+}
+
+.action-item{
+    position: relative;
+    width: 46%;
+} 
+
+
+
+.action-item > img {
+    width: 100%;
+}
+
+.action-item > .sale {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 311px;
+    position: absolute;
+}
+
+.action-item > .sale > .sale1 {
+    width: 25%;
+    height: 70px;
+    border-radius: 8px 49px 152px;
+    background: #849E6E;
+    color: white;
+}
+
+.action-item > .sale > .sale2 {
+    background-color: rgb(2, 8, 29);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+}
+.action-item > .name-country {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.473);
+    backdrop-filter: blur(0.8px);
+    position: absolute;
+    bottom: 4px;
+    width: 311px;
+    height: 40px;
+}
+
+.action-item > .name-country > .name1 {
+    background-color: #A56F63;
+    width: 50%;
+    height: 40px;
+    border-radius: 0px 50px 18px 0px;
+    color: white;
+}
+
+.action-item > .name-country p{
+    color: white;
+}
+.action-item > .name-country span {
+    color: #A56F63;
+}
+
+.action-item > .name-country .name1 h2 {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/autobus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contact h2 {
+    font-size: 40px;
+    color: white;
+    padding: 30px;
+}
+
+.contact iframe {
+    padding: 30px;
+}
+
+.contact > .contact-inputs {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+.contact > .contact-inputs input{
+    padding: 4px 17px;
+}
+.contact > .contact-inputs textarea {
+    width: 390px;
+    height: 300px;
+}
+.contact > .contact-inputs button {
+    padding: 15px;
+    background-color: rgb(165, 101, 49);
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+.contact > .contact-inputs ::placeholder {
+    text-align: center;
+    line-height: 7;
+}
+
+.footer{
+    
+    width: 100%;
+    height: 200px;
+    background: white;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+    background: rgb(175, 106, 2);
+    color: white;
+    font-size: 22px;
+}
+
+.footer > span {
+    position: absolute;
+    top: 150px;
+}

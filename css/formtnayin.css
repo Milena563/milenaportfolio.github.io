@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+}
+body {
+    font-style: italic;
+    margin: 0;
+    font: 14px Tahoma, sans-serif;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/5/56/Seoul_%28South_Korea%29.jpg) no-repeat center/cover;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.row {
+    
+    margin-bottom: 15px;
+}
+.row:last-child {
+    margin-bottom: 0;
+}
+.row label {
+    /*display: block;*/
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 30px auto;
+    width: 460px;
+    padding: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+  
+}
+form input:not([type=checkbox],[type=radio]),
+form button {
+    width: 100%;
+    padding: 10px;
+  
+}
+
+form input {
+    border: 1px solid #999;
+    background: transparent;
+    color: #fff;
+    
+}
+#text {
+    border: 1px solid #999;
+    background: transparent;
+}
+#taretiv {
+    border: 1px solid #999;
+    background: transparent;
+}
+
+form input:focus {
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    width: 85px;
+}
+
+
+
+button:hover {
+    background: #0492c2;
+    border-color: #0492c2;
+    color: #fff;
+}           
+
+fieldset {
+    width: 400px;
+    
+}
+
+textarea{
+    margin: 0;
+    width: 376px;
+    max-width: 376px;
+    height: 100px;
+    padding: 5px;
+    color: white;
+   
+}
+
+select {
+    color: white;
+    width: 95px;
+    height: 38px;
+}
+
+select option {
+    color: #ffff;
+    background-color:#000;
+}
+
+#tareti {
+    text-align: center;
+}
+
+
+legend {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+
+
+

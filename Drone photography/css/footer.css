@@ -1,0 +1,53 @@
+/* Footer */
+
+.allfooter {
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .allfooter .footer1 {
+   
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .allfooter h3 {
+  font-size: 22px;
+  font-family: 'Anek Telugu', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  }
+  .allfooter ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .allfooter .footer-logo img{
+    width: 100px;
+  }
+  
+  .allfooter .footer-logo p {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .allfooter .footer-icons .foot-icon i {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #B84DBA;
+  }
+  
+  .allfooter .footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }

@@ -1,0 +1,688 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1A1A1A;
+}
+
+/* Rules */
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Header menu */
+/* header.css */
+
+
+/* About Us */
+
+.main1 {
+  
+    background-color: #3f3f3f21;
+    color: white;
+    background-image:url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg3.png);
+    background-position: bottom right;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arrow1,.descr,.arrow2 {
+    margin-top: 120px;
+    /* padding: 20px; */
+
+}
+.main1 .descr {
+    text-align: center;
+    
+}
+
+.main1 .descr h1 {
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+   
+}
+.main1 .descr p {
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.main1 .descr button {
+    padding: 17px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+   background: linear-gradient(90deg, rgba(231,136,70) 20%, rgba(213,122,171) 74%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.main1 .descr button:hover {
+    opacity: 0.8;
+}
+.arrow1,.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 300px;
+}
+
+.arrow2 {
+    margin-left:  300px;
+}
+
+.arrow1 p, .arrow2 p {
+    font-size: 40px;
+
+}
+
+.arrow1 p:hover, .arrow2 p:hover {
+    color: #E6884C;
+} 
+
+/* Main2 */
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.main2 .descr {
+    color: #fff;
+    width: 600px;
+    padding: 10px;
+}
+.main2 .descr h1 {
+  font-family: 'Anek Telugu', sans-serif;
+  letter-spacing: 2px;
+  font-size: 37px;
+  line-height: 1.2;
+} 
+.main2 .descr p {
+  font-family: 'Quicksand', sans-serif;
+}
+.main2 .main2-image {
+  background-image: url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+}
+.main2 .main2-image img {
+    width: 500px;
+}
+
+.main2 .descr button {
+  padding: 17px;
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+ background: linear-gradient(90deg, rgba(231,136,70) 20%, rgba(213,122,171) 74%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Main3 */
+
+.main3 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.main3 .box .box-descr h1 {
+  font-size: 70px;
+  font-family: 'Anek Telugu', sans-serif;
+  letter-spacing: 2px;
+}
+
+.main3 .box .box-descr p{
+  font-family: 'Anek Telugu', sans-serif;
+  font-size: 20px;
+  color: #EA8B37;
+  
+}
+
+.main3 .box .box-descr {
+  line-height: 0.9;
+}
+
+.main3 .box:nth-child(1){
+  border-right: 2px solid #CF75CC;
+  padding-right: 150px;
+}
+.main3 .box:nth-child(2){
+  border-right: 2px solid #CF75CC;
+  padding-right: 150px;
+}
+.main3 .box:nth-child(3){
+  border-right: 2px solid #CF75CC;
+  padding-right: 150px;
+}
+
+/* Skill Bar */
+
+.skill-all {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.skill-all .skill-img img {
+  width: 260px;
+  border-radius: 5px;
+  
+}
+
+.skill-all .skill-img {
+  padding: 25px;
+}
+.skill-info {
+  color: #fff;
+  width: 600px;
+  margin-left: 30px;
+  
+}
+.skill-info h1 {
+  font-family: 'Anek Telugu', sans-serif;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+.skill-info p {
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #fff;
+  background: #6665ee;
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+  color: #fff;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 4px;
+  width: 100%;
+  background: #000;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(12, 4, 4, 0.8);
+  animation: animate 1s cubic-bezier(.29,.61,.56,.15) forwards;
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  /* background: #6665ee; */
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.control span{
+  width: 90%;
+  background-color: #B84DBA;
+}
+.bar .progress-line.videography span{
+  width: 70%;
+  background-color: #CF75CC;
+}
+.bar .progress-line.photography span{
+  width: 80%;
+  background-color: #EA8B37;
+}
+
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  /* border-top-color: #000; */
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  /* background: #000; */
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.control span::after{
+  content: "90%";
+}
+.progress-line.videography span::after{
+  content: "70%";
+}
+.progress-line.photography span::after{
+  content: "80%";
+}
+
+
+/* Quest Box */
+
+.quest-box {
+  margin: auto;
+  background-color: #000;
+  background-image: url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg.png);
+  width: 950px;
+  /* padding: 10px; */
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items:flex-start;
+  background-position: center center;
+  background-size: cover;
+  box-shadow:5px 5px 15px 5px #000000 ;
+}
+
+.quest-box .quest-descr {
+  line-height: 1.5;
+  margin: 50px;
+}
+.quest-box .quest-descr h2 {
+  color: #E6884C;
+  font-family: 'Anek Telugu', sans-serif;
+  letter-spacing: 2px;
+}
+.quest-box .quest-descr h1 {
+  color: #fff;
+  font-family: 'Anek Telugu', sans-serif;
+  letter-spacing: 2px;
+}
+ .quest-button button {
+  padding: 17px;
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+ background: linear-gradient(90deg, rgba(231,136,70) 20%, rgba(213,122,171) 74%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 70px;
+ }
+
+/* Footer */
+/* footer.css */
+
+/* Responsive */
+
+@media (min-width: 300px){
+
+  .arrow1,.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 10px;
+}
+
+.arrow2 {
+    margin-left:  10px;
+}
+
+.arrow1 p, .arrow2 p {
+    font-size: 20px;
+}
+.main3 .box:nth-child(1) {
+  border-bottom: 2px solid #CF75CC !important;
+  border-right: none;
+  padding: 20px;
+}
+
+.main3 .box:nth-child(2) {
+  border-bottom: 2px solid #CF75CC !important;
+  border-right: none;
+  padding: 20px;
+}
+
+.main3 .box:nth-child(3) {
+  border-bottom: 2px solid #CF75CC !important;
+  border-right: none;
+  padding: 20px;
+}
+
+.skill-info {
+  width: 300px;
+  margin: auto;
+}
+.skill-bars {
+  width: 300px;
+}
+
+.quest-box {
+  width: 300px;
+  text-align: center;
+}
+.quest-button button {
+  margin-top: 5px;
+}
+}
+@media (min-width: 576px){
+
+  .arrow1,.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 50px;
+}
+
+.arrow2 {
+    margin-left:  50px;
+}
+
+.arrow1 p, .arrow2 p {
+    font-size: 40px;
+
+}
+.main3 .box:nth-child(1) {
+  border-bottom: 2px solid #CF75CC !important;
+  border-right: none;
+  padding: 20px;
+}
+
+.main3 .box:nth-child(2) {
+  border-bottom: 2px solid #CF75CC !important;
+  border-right: none;
+  padding: 20px;
+}
+
+.main3 .box:nth-child(3) {
+  border-bottom: 2px solid #CF75CC !important;
+  border-right: none;
+  padding: 20px;
+}
+
+.skill-info {
+  width: 500px;
+  margin: auto;
+}
+.skill-bars {
+  width: 500px;
+}
+
+.skill-info {
+  width: 500px;
+  margin: auto;
+}
+.skill-bars {
+  width: 500px;
+}
+}
+@media (min-width: 768px){
+  .arrow1,.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 100px;
+}
+
+.arrow2 {
+    margin-left:  100px;
+}
+
+.arrow1 p, .arrow2 p {
+    font-size: 40px;
+
+}
+.main3 .box:nth-child(1) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.main3 .box:nth-child(2) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.main3 .box:nth-child(3) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.skill-info {
+  width: 600px;
+  margin: auto;
+}
+.skill-bars {
+  width: 600px;
+}
+.quest-box {
+  width: 700px;
+}
+.quest-button button {
+  margin-top: 70px;
+}
+}
+@media (min-width: 992px){
+
+  .arrow1,.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 200px;
+}
+
+.arrow2 {
+    margin-left:  200px;
+}
+
+.arrow1 p, .arrow2 p {
+    font-size: 40px;
+
+}
+.main3 .box:nth-child(1) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding: 20px;
+}
+
+.main3 .box:nth-child(2) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding: 20px;
+}
+
+.main3 .box:nth-child(3) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding: 20px;
+}
+
+.skill-info {
+  width: 600px;
+  margin: auto;
+}
+.skill-bars {
+  width: 600px;
+}
+
+.quest-button button {
+  margin-top: 70px;
+}
+
+.quest-box {
+  width: 700px;
+}
+.quest-button button {
+  margin-top: 70px;
+}
+}
+@media (min-width: 1200px){
+
+  .arrow1,.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 300px;
+}
+
+.arrow2 {
+    margin-left:  300px;
+}
+
+.arrow1 p, .arrow2 p {
+    font-size: 40px;
+
+}
+.main3 .box:nth-child(1) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.main3 .box:nth-child(2) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.main3 .box:nth-child(3) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.skill-info {
+  width: 600px;
+  margin: auto;
+}
+.skill-bars {
+  width: 600px;
+}
+
+.quest-button button {
+  margin-top: 70px;
+}
+
+}
+@media (min-width: 1400px){
+
+  .arrow1,.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 300px;
+}
+
+.arrow2 {
+    margin-left:  300px;
+}
+
+.arrow1 p, .arrow2 p {
+    font-size: 40px;
+
+}
+
+
+.main3 .box:nth-child(1) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.main3 .box:nth-child(2) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.main3 .box:nth-child(3) {
+  border-right: 2px solid #CF75CC;
+  border-bottom: none !important;
+  padding-right: 40px;
+}
+
+.skill-info {
+  width: 600px;
+  margin: auto;
+}
+.skill-bars {
+  width: 600px;
+}
+
+.quest-button button {
+  margin-top: 70px;
+}
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1A1A1A;
+}
+
+/* Rules */
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+/* Main */
+.error-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 70px;
+    background-image: url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+}
+
+.error-main .error-title h1 {
+color: #fff;
+font-size: 100px;
+font-family: 'Fjalla One', sans-serif;
+text-align: center;
+letter-spacing: 2px;
+}
+
+.error-main .error-title h3 {
+color: #EA8B37;
+font-size:40px;
+font-family: 'Fjalla One', sans-serif;
+letter-spacing: 2px;
+margin-bottom: 10px;
+}
+
+
+.error-main .error-descr p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Corben', cursive;
+    /* line-height: 1.2; */
+    margin: 0px;
+}
+
+.error-main .error-button button {
+    padding: 17px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+   background: linear-gradient(90deg, rgba(231,136,70) 20%, rgba(213,122,171) 74%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* Responsive */
+
+@media (min-width: 300px) {
+  
+    .quest-box {
+      width: 300px;
+      text-align: center;
+    }
+    .quest-button button {
+      margin-top: 5px;
+    }
+    }
+  
+  @media (min-width: 576px) { 
+
+    .quest-box {
+      width: 500px;
+    }
+    .quest-button button {
+      margin-top: 5px;
+    }
+   }
+  
+  @media (min-width: 768px) { 
+  
+    .quest-box {
+      width: 700px;
+    }
+    .quest-button button {
+      margin-top: 70px;
+    }
+   }
+  
+  @media (min-width: 992px) {  
+  
+    .quest-button button {
+      margin-top: 70px;
+    }
+  
+    .quest-box {
+      width: 700px;
+    }
+    .quest-button button {
+      margin-top: 70px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+  
+    .quest-button button {
+      margin-top: 70px;
+    }
+   }
+  
+  @media (min-width: 1400px) {
+  
+  
+    .quest-button button {
+      margin-top: 70px;
+    }
+   }

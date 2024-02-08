@@ -1,0 +1,1528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Sign in */
+
+
+/* Full-width input fields */
+.modal input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btn-sign-in,.btn-sign-up{
+    font-family: 'Quicksand', sans-serif;
+    /* font-weight: bold; */
+    /* background-color: #04AA6D; */
+    /* font-size: 12px; */
+    background-color: #00CFD1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-sign-in,.btn-sign-up:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.container .cancelbtn {
+    width: auto;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 18px;
+    background-color: #f44336;
+    
+}
+
+/* Center the image and position the close button */
+/* .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}*/
+
+/* img.avatar {
+    width: 40%;
+    border-radius: 50%;
+} */
+
+.modal .container {
+    padding: 16px;
+}
+
+.modal span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.modal .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.modal .close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.modal .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .modal span.psw {
+        display: block;
+        float: none;
+    }
+
+    .modal .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+/* Sign up */
+
+
+/* Full-width input fields */
+.signup input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.signup input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.signup p{
+  font-size: 15px;
+}
+/* Set a style for all buttons */
+.signup button {
+    /* background-color: #04AA6D; */
+    background-color: #00CFD1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signup button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.signup .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signup .cancelbtn,
+.signupbtn {
+    float: left;
+    width: auto;
+}
+
+/* Add padding to container elements */
+.signup .container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.signup .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    /* background-color: #474e5d; */
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.signup .modal-content {
+    background-color: #fefefe;
+    margin: 3% auto 8% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+.signup hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.signup .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.signup .close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.signup .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .signup .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Icons */
+
+.email {
+    margin-right: 7px;
+}
+
+.phone {
+    margin-right: 7px;
+}
+
+.clock {
+    margin-right: 5px;
+}
+.location {
+    margin-right: 5px;
+}
+/* Header */
+
+.info ul {
+    width: auto;
+    float: right;
+    margin-top: 0px;
+    
+}
+
+.info {
+background: #ffff;
+border: 1px solid #ffff;
+margin-bottom: 50px;
+}
+
+.info li {
+    display: inline-block;
+    padding: 2px 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+.info li:first-of-type {
+    margin: 5px;
+    
+}
+
+.info li:nth-of-type(2) {
+    margin-right: 650px;
+    border-left: 1px solid black;
+}
+
+.info li:nth-of-type(3) {
+    margin-right: 5px;
+}
+.info li:nth-of-type(4) {
+margin-right: 150px;
+border-left: 1px solid black;
+}
+
+
+.info a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+/* Main 1 */
+
+.main1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    background: #00CFD1;
+    height: 150px;
+}
+
+.main1 .info2 h1 a {
+    text-decoration: none;
+    color: #ffff;
+}
+/* .info2 {
+    border: 1px solid rgb(0, 0, 0);   
+    padding-top: 30px;
+    background: #00CFD1;
+    height: 200px;
+
+} */
+
+/* .h1info, .pinfo {
+    margin-left: 60px;
+} */
+
+.h1info {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 7px;
+    color: #ffff;
+    font-size: 40px !important;
+    
+}
+
+.pinfo {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffff;    
+    margin-bottom: 40px;
+    font-size: 15px !important;
+
+}
+
+.address {
+    margin-bottom: 30px !important;
+    
+}
+
+.address p {
+    color: #ffff;
+    text-align: right;
+    margin: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Navbar */
+.header{
+    background-color: rgb(255, 253, 253);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 5px 13px 3px rgba(0,0,0,0.69);
+    /* margin-left: 300px;
+    margin-right: 240px;
+    margin-bottom: 5px; */
+    width: 900px;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 8px;
+
+  }
+  
+  .but_search{
+    padding: 7px;
+    border-radius: 50px;
+  }
+  
+  .navbar {
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 7px;
+      
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+    }
+    
+    /* .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+      background-color: red;
+    } */
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+  .show{
+      display: block;
+    }
+  
+  
+  /* .er-nkar{
+    animation: mymove 5s infinite;
+  }
+        
+ @keyframes mymove {
+     50% {transform: rotate(180deg);}
+        } */
+  
+  
+  /* .fa-caret-down{
+    animation: mymove 1s infinite;
+  }
+        
+  @keyframes mymove {
+    50% {transform: rotate(180deg);}
+  } */
+
+  
+  .search-container{
+      opacity: 25%;
+  }
+
+/* Main 2 */
+.main2-container .main2-row .main2-banner {
+    position: relative;
+    margin: 0 auto;
+}
+
+.main2-container .main2-row .main2-banner img {
+    width: 100%;
+}
+
+.main2-container .main2-row .main2-banner h1 {
+    position: absolute;
+    top: 30%;
+    margin-left: 200px;
+    font-size: 40px;
+    color: #263238;
+    font-weight: bolder;
+    font-family: 'Secular One', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.main2-container .main2-row .main2-banner span {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: #263238;
+   
+}
+
+/* Cards */
+
+.card-image img {
+    width: 295px;
+    padding-top: 10px;
+    margin: auto;
+    border-radius: 5%;
+}
+
+.card-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px !important;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: auto;
+}
+
+
+.card-column {
+    /* display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around; */
+    width: 420px;
+    /* float: left; */
+    /* padding: 0px 10px; */
+    margin: 15px;
+    margin: auto;
+    margin-top: 10px;
+}
+/* .row::after {
+    content: "";
+    display: table;
+    clear: both;
+    
+} */
+
+.card {
+    border: 1px solid #eeeeee8f;
+    border-radius: 5%;
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+.card .card-title,.card-descr {
+    margin-left: 20px;
+}
+
+.card .card-title  {
+    font-family: 'Montserrat', sans-serif;
+    color: #505050;
+}
+
+.card-title h3 {
+    font-size: 15px;
+    text-align: start;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.card .card-descr {
+    margin-top: 10px;
+}
+.card-descr .card-text {
+    font-size: 13px;
+    color: #8E8E8E;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: start;
+}
+
+.card-button button {
+    border: 1px solid #FA8D6A;
+    padding: 9px;
+    display: inline-block;
+    color: #FA8D6A;
+    background-color: #fff;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.card-button {
+    text-align: start;
+    margin-top: 20px;
+}
+
+
+/* Choose Us */
+
+.choose {
+    margin-top: 10px;
+    margin-left: 32px;
+    
+}
+
+.goal .choose h2, p {
+    font-family: 'Montserrat', sans-serif;
+    color: #838383;
+    font-size: 20px;
+}
+.why {
+    color: #01D8DC;
+    border-color: #01D8DC;
+    border-left: 1px solid #01D8DC;
+    padding-left: 25px;
+    
+}
+
+.goal .choose p {
+    margin-left: 20px ;
+    padding: 6px;
+    color: #555657;
+    font-size: 12px;
+    text-align: start;
+    
+}
+.goal {
+    background-color: #2D3035;
+    padding: 50px;
+    border: 1px solid white;
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+.goal2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.goal-img img {
+    width: 450px;
+}
+.goal-text {
+    margin-right: 20px;
+
+}
+
+.goal .goal2 .goal-text h2 {
+    color: #A2A29B;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+    
+}
+
+.goal .goal2 .goal-text p {
+    color: #A2A29B;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: start !important;
+}
+
+.goal .goal2 .goal-text button {
+    border: 1px solid #F96332;
+    padding: 9px;
+    display: inline-block;
+    background-color: #F96332;
+    color: #ffff;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+
+/* Latest News */
+
+.news {
+    margin-top: 50px;
+    margin-left: 100px !important;
+    
+}
+
+.news h2, p {
+    font-family: 'Montserrat', sans-serif;
+    color: #838383;
+    font-size: 25px;
+    text-align: start !important;
+}
+.latest {
+    color: #01D8DC;
+    border-color: #01D8DC;
+    border-left: 1px solid #01D8DC;
+    padding-left: 25px;
+    
+}
+
+.news p {
+    margin-left: 20px ;
+    padding: 6px;
+    color: #555657;
+    font-size: 12px;
+    text-align: start;
+    
+}
+
+/* News Card */
+
+
+.news-image img {
+    width: 260px;
+    padding-top: 10px;
+    margin: auto;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.news-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: auto;
+    
+}
+
+
+.news-column {
+    width: 320px;
+    /* float: left; */
+    /* padding: 0px 10px; */
+    
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* .row::after {
+    content: "";
+    display: table;
+    clear: both;
+    
+} */
+
+.news-card {
+    border: 1px solid #EEEEEE;
+    max-width: 400px;
+    margin: auto;
+    
+    background-color: white;
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+.news-card .news-title,.news-descr {
+    margin-left: 20px;
+}
+
+.news-card .news-title  {
+    font-family: 'Montserrat', sans-serif;
+    color: #505050;
+}
+
+.news-title h3 {
+    font-size: 15px;
+    text-align: start;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.news-card .news-descr {
+    margin-top: 10px;
+}
+.news-descr .news-text {
+    font-size: 12px;
+    color: #8E8E8E;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: start;
+}
+
+.news-card .news-comments{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 20px;
+    border-top: 1px solid #e4e0e0;
+}
+
+.news-card .news-comments .news-data{
+    color: #817f7f;
+}
+.news-card .news-comments .news-comment {
+    color: #F96332;
+    
+}
+
+.news-card .news-comments .news-data,.news-comment {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* Submit Form */
+  
+.reg-form {
+    margin-top: 50px;
+    background-color: #ffff;
+    padding: 10px 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 2px 2px 2px 2px rgb(199, 196, 196);
+    
+  }
+  .reg-form input {
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 32%;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .reg-form button {
+    border: 1px solid #F96332;
+    padding: 10px;
+    color: #ffff;
+    background-color: #F96332;
+    cursor: pointer;
+    width: 28% !important;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .reg-form button:hover {
+      opacity: 0.9;
+  }
+
+
+/* Footer */
+
+.footer {
+    margin-top: 50px;
+    background-color: #ECEEEF;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .part1 .part1-title h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.footer .part1 .part1-text p {
+    font-size: 15px;
+}
+.footer .part2 .part2-title h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+.footer .part2 .part2-ul .row-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .part2 .part2-ul .row-ul .ul1 li, .ul2 li {
+    list-style-type: none;
+    margin:10px;
+}
+.footer .part2 .part2-ul .row-ul .ul1 li a, .ul2 li a {
+    text-decoration: none;
+    color: #5f5d5d;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+.footer .part2 .part2-ul .row-ul .ul1 li a:hover, .ul2 li a:hover{
+    color: #F96332;
+}
+.footer .part3 .part3-title h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.footer .part3 .footer-icons ul li {
+    list-style-type: none;
+    margin: 15px;
+    color: #5f5d5d;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+@media (min-width: 300px) {
+    
+    .info li:nth-of-type(2) {
+      margin-right: 1px; 
+  } 
+ 
+  .info li:first-of-type {
+    margin: 1px;
+  }
+  .info li {
+    font-size: 7px;
+  }
+  .header {
+    width: 95%;
+    margin-right: 20px;
+  }
+  .navbar a,.dropdown-content a,.dropdown .dropbtn {
+    font-size: 13px;
+  }
+  .main1 {
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  .h1info{
+    font-size: 25px !important;
+  }
+  
+  .address p {
+    font-size: 13px;
+  }
+  .main2-container .main2-row .main2-banner h1 {
+    top: 8%;
+   margin-left: 70px;
+   font-size: 20px;
+  }
+  .choose {
+    margin-left: 10px;
+    
+}
+  .goal2 {
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+}
+.goal {
+    width: 300px;
+}
+.goal .goal2 .goal-text h2 {
+   font-size: 20px;
+    
+}
+
+.goal .goal2 .goal-text p {
+    font-size: 13px;
+}
+
+.goal .goal2 .goal-text button {
+   font-size: 13px;
+   width: 150px;
+}
+.goal-img img {
+    margin-top: 30px;
+    width: 250px;
+}
+  .reg-form {
+    width: 65%;
+    margin: auto;
+  }
+  .reg-form input {
+    margin-left: 50px;
+    width: 200px;
+    
+  }
+  .reg-form button {
+    margin-top: 6px;
+    margin-left: 50px;
+    width: 200px !important;
+  }
+  
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  .footer .part1 {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .footer .part1 .part1-text p {
+    font-size: 13px;
+  }
+  .footer .part2 .part2-ul .row-ul .ul1 li a, .ul2 li a {
+    font-size: 13px;
+  }
+  .footer .part2 {
+    margin-top: 20px;
+  }
+  .footer .part2 .part2-ul .row-ul .ul1 li i, .ul2 li i{
+    font-size: 15px;
+  }
+  .footer .part3 {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .footer .part3 .footer-icons ul li {
+    font-size: 13px;
+  }
+
+
+  }
+
+@media (min-width: 576px) { 
+  .info li:nth-of-type(2) {
+    margin-right: 5px;
+    
+} 
+.info li {
+  font-size: 11px;
+}
+.header {
+  width: 95%;
+  margin-right: 20px;
+}
+.navbar a,.dropdown-content a,.dropdown .dropbtn {
+  font-size: 13px;
+}
+.main1 {
+  width: 100%;
+  font-size: 15px;
+}
+
+.h1info{
+  font-size: 35px !important;
+}
+
+.address p {
+  font-size: 15px;
+}
+.main2-container .main2-row .main2-banner h1 {
+  top: 10%;
+ margin-left: 100px;
+ font-size: 25px;
+}
+
+.goal2 {
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+}
+.goal {
+    width: 550px;
+}
+.goal .goal2 .goal-text h2 {
+   font-size: 20px;
+    
+}
+
+.goal .goal2 .goal-text p {
+    font-size: 13px;
+}
+
+.goal .goal2 .goal-text button {
+   font-size: 13px;
+   width: 150px;
+}
+.goal-img img {
+    margin-top: 30px;
+    width: 350px;
+}
+.reg-form {
+  width: 65%;
+}
+.reg-form input {
+  margin-left: 50px;
+  width: 200px;
+  
+}
+.reg-form button {
+  margin-top: 6px;
+  margin-left: 50px;
+  width: 200px !important;
+}
+
+.footer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.footer .part1 {
+  width: 250px;
+  margin-top: 20px;
+}
+.footer .part1 .part1-text p {
+  font-size: 13px;
+}
+.footer .part2 .part2-ul .row-ul .ul1 li a, .ul2 li a {
+  font-size: 13px;
+}
+
+.footer .part2 .part2-ul .row-ul .ul1 li i, .ul2 li i{
+  font-size: 15px;
+}
+.footer .part3 {
+  width: 210px;
+}
+.footer .part3 .footer-icons ul li {
+  font-size: 13px;
+}
+
+} 
+
+ 
+@media (min-width: 768px) { 
+  .info li:nth-of-type(2) {
+    margin-right: 140px;
+    
+} 
+.info li {
+  font-size: 13px;
+}
+.header {
+  width: 85%;
+  margin-right: 20px;
+}
+.navbar a,.dropdown-content a,.dropdown .dropbtn {
+  font-size: 13px;
+}
+.main1 {
+  width: 100%;
+  font-size: 15px;
+}
+
+.h1info{
+  font-size: 40px !important;
+}
+
+.address p {
+  font-size: 18px;
+}
+.main2-container .main2-row .main2-banner h1 {
+  top: 20%;
+ margin-left: 100px;
+ font-size: 30px;
+}
+
+.goal2 {
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+}
+.goal {
+    width: 600px;
+}
+.goal .goal2 .goal-text h2 {
+   font-size: 20px;
+    
+}
+
+.goal .goal2 .goal-text p {
+    font-size: 13px;
+}
+
+.goal .goal2 .goal-text button {
+   font-size: 13px;
+   width: 150px;
+}
+.goal-img img {
+    margin-top: 30px;
+    width: 350px;
+}
+.reg-form {
+  width: 75%;
+  margin: auto;
+}
+.reg-form input {
+  margin-left: 50px;
+  width: 200px;
+  
+}
+.reg-form button {
+  margin-top: 6px;
+  margin-left: 170px;
+  width: 200px !important;
+}
+
+.footer {
+  flex-direction: row;
+  height: 350px;
+  width: 100%;
+}
+.footer .part1 {
+  width: 250px;
+  margin-top: 20px;
+}
+.footer .part1 .part1-text p {
+  font-size: 13px;
+}
+.footer .part2 .part2-ul .row-ul .ul1 li a, .ul2 li a {
+  font-size: 13px;
+}
+
+.footer .part2 .part2-ul .row-ul .ul1 li i, .ul2 li i{
+  font-size: 15px;
+}
+.footer .part3 {
+  width: 210px;
+}
+.footer .part3 .footer-icons ul li {
+  font-size: 13px;
+}
+} 
+@media (min-width: 992px) { 
+  .info li:nth-of-type(2) {
+    margin-right: 300px;
+    
+} 
+.info li {
+  font-size: 15px;
+}
+.header {
+  width: 90%;
+  margin-right: 50px;
+}
+.navbar a,.dropdown-content a,.dropdown .dropbtn {
+  font-size: 18px;
+}
+.main1 {
+  width: 100%;
+  font-size: 15px;
+}
+
+.h1info{
+  font-size: 45px !important;
+}
+
+.address p {
+  font-size: 20px;
+}
+.main2-container .main2-row .main2-banner h1 {
+  top: 20%;
+ margin-left: 100px;
+ font-size: 45px;
+}
+
+.reg-form {
+  width: 80%;
+  margin: auto;
+}
+.reg-form input {
+  margin-left: 50px;
+  width: 200px;
+  
+}
+.reg-form button {
+  margin-top: 6px;
+  margin-left: 50px;
+  width: 170px !important;
+}
+
+.footer {
+  flex-direction: row;
+  height: 350px;
+  width: 100%;
+}
+.footer .part1 {
+  width: 250px;
+  margin-top: 20px;
+}
+.footer .part1 .part1-text p {
+  font-size: 15px;
+}
+.footer .part2 .part2-ul .row-ul .ul1 li a, .ul2 li a {
+  font-size: 15px;
+}
+
+.footer .part2 .part2-ul .row-ul .ul1 li i, .ul2 li i{
+  font-size: 15px;
+}
+.footer .part3 {
+  width: 210px;
+}
+.footer .part3 .footer-icons ul li {
+  font-size: 12px;
+}
+} 
+@media (min-width: 1200px) { 
+  .info li:nth-of-type(2) {
+    margin-right: 460px;
+    
+} 
+.info li {
+  font-size: 15px;
+}
+.header {
+  width: 80%;
+  margin-right: 120px;
+}
+.navbar a,.dropdown-content a,.dropdown .dropbtn {
+  font-size: 18px;
+}
+.main1 {
+  width: 100%;
+  font-size: 15px;
+}
+
+.h1info{
+  font-size: 45px !important;
+}
+
+.address p {
+  font-size: 20px;
+}
+.main2-container .main2-row .main2-banner h1 {
+  top: 20%;
+ margin-left: 200px;
+ font-size: 45px;
+}
+.goal2 {
+  flex-direction:row;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.goal {
+width: 950px;
+}
+
+.reg-form {
+ margin-left: 100px;
+  width: 1000px;
+}
+.reg-form input {
+  margin-left: 40px;
+  width: 230px;
+  
+}
+.reg-form button {
+  margin-left: 100px;
+  width: 80px;
+}
+
+.footer {
+  flex-direction: row;
+  height: 350px;
+  width: 100%;
+}
+.footer .part1 {
+  width: 250px;
+  margin-top: 20px;
+}
+.footer .part1 .part1-text p {
+  font-size: 15px;
+}
+.footer .part2 .part2-ul .row-ul .ul1 li a, .ul2 li a {
+  font-size: 15px;
+}
+
+.footer .part2 .part2-ul .row-ul .ul1 li i, .ul2 li i{
+  font-size: 15px;
+}
+.footer .part3 {
+  width: 210px;
+}
+.footer .part3 .footer-icons ul li {
+  font-size: 12px;
+}
+} 
+ 
+@media (min-width: 1400px) { 
+  .info li:nth-of-type(2) {
+    margin-right: 720px;
+    
+} 
+.info li {
+  font-size: 15px;
+}
+.header {
+  width: 80%;
+  margin-right: 90px;
+}
+.navbar a,.dropdown-content a,.dropdown .dropbtn {
+  font-size: 18px;
+}
+.main1 {
+  width: 100%;
+}
+
+.h1info{
+  font-size: 45px !important;
+}
+
+.address p {
+  font-size: 20px;
+}
+.main2-container .main2-row .main2-banner h1 {
+  top: 30%;
+ margin-left: 100px;
+ font-size: 45px;
+}
+.goal2 {
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+}
+.reg-form {
+ margin-left: 200px;
+  width: 1000px;
+}
+.reg-form input {
+  margin-left: 40px;
+  width: 230px;
+  
+}
+.reg-form button {
+  margin-left: 100px;
+  width: 80px;
+}
+
+.footer {
+  flex-direction: row;
+  height: 350px;
+  width: 100%;
+}
+.footer .part1 {
+  width: 250px;
+  margin-top: 20px;
+}
+.footer .part1 .part1-text p {
+  font-size: 15px;
+}
+.footer .part2 .part2-ul .row-ul .ul1 li a, .ul2 li a {
+  font-size: 15px;
+}
+
+.footer .part2 .part2-ul .row-ul .ul1 li i, .ul2 li i{
+  font-size: 15px;
+}
+.footer .part3 {
+  width: 210px;
+}
+.footer .part3 .footer-icons ul li {
+  font-size: 13px;
+}
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Lato&family=Montserrat&family=Oxygen:wght@700&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Roboto+Serif:wght@800&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Lato&family=Montserrat&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Roboto+Serif:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" href="image/icons8-hospital-65.png" type="image/x-icon">
+    <title>About Us</title>
+</head>
+<body>
+
+    <header>
+        <div class="info">
+            <ul>
+                <li><i class="fa-solid fa-envelope email"></i><a>info@example.com</a></li>
+                <li><i class="fa-solid fa-phone phone"></i><a>+202-555-0191</a></li>
+                <li>
+                    <button class="btn-sign-in" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign
+                        in</button>
+
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                                <!-- <img src="img/img_avatar2.png" alt="Avatar" class="avatar"> -->
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button class="btn-sign-in"type="submit">Sign in</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+
+                </li>
+                <li>
+                    <button class="btn-sign-up" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign
+                        up</button>
+
+                    <div class="signup">
+                        <div id="id02" class="modal">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                            <form class="modal-content" action="/action_page.php">
+                                <div class="container">
+                                    <h1>Sign Up</h1>
+                                    <p style="padding-top: 5px;padding-bottom: 3px;">Please fill in this form to create an account.</p>
+                                    <hr>
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"
+                                            style="margin-bottom:15px">
+                                        Remember me
+                                    </label>
+
+                                    <p>By creating an account you agree to our <a href="#"
+                                            style="color:dodgerblue">Terms &
+                                            Privacy</a>.
+                                    </p>
+
+                                    <div class="clearfix">
+                                        <button type="button"
+                                            onclick="document.getElementById('id02').style.display='none'"
+                                            class="cancelbtn">Cancel</button>
+                                        <button type="submit" class="signupbtn">Sign Up</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="main1">
+            <div class="info2">
+                <h1 class="h1info"><a href="hospital.html">OREO</a></h1>
+                <p class="pinfo">Care Your Health</p>
+            </div>
+            <div class="address">
+                <p><i class="fa-regular fa-clock clock"></i>Mon - Sat: 9:00 - 18:00 Sunday CLOSED</p>
+                <p><i class="fa-solid fa-location-dot location"></i>1422 1st St. Santa Rosa CA 94559. United States</p>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div  class="header wow animate__fadeInDown" data-wow-duration="1s">
+                <div class="navbar">
+                    <a href="services.html">Services</a></li>
+                    <a href="department.html">Departments</a></li>
+                    <a href="doctors.html">Doctors</a></li>
+                    <div id="dropDown" class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Blog
+    
+                            <!-- <img onclick="rotImg()" class="er-nkar" src="img/Vector.svg" alt="erankyun"> -->
+                            <i  id="erankyuni1" class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="blog.html">Blog</a>
+                            <a href="blog-detail.html">Blog Detail</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction1()">Pages
+                            <!-- <img onclick="rotImg()" class="er-nkar" src="img/Vector.svg" alt="erankyun"> -->
+                            <i id="erankyuni" class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown1">
+                            <a href="aboutus.html">About Us</a>
+                            <a href="faqs.html">FAQs</a>
+                            <a href="galary.html">Galary</a>
+                            <a href="pricelist.html">Price list</a>
+                        </div>
+                    </div>
+                    <a href="contactus.html">Contact Us</a></li>
+                </div>
+                <div class="search-container">
+                    <form action="">
+                        <input class="but_search" type="text" placeholder="Search" name="search">
+                    </form>
+                </div>
+            </div>
+        <div class="main2-container">
+           <div class="main2-row">
+               <div class="main2-banner">
+                   <img src="image/banner-about.jpg" alt="">
+                   <h1><span>About Us <br> Oreo</span> Hospital</h1>
+               </div>
+           </div>
+        </div>
+
+        
+    <div class="choose wow animate__fadeInLeft"> 
+        <h2><span class="why">About</span> Us</h2>
+        <p>Description text here...</p>
+    </div>
+    <div class="about-container">
+        <div class="about-img wow animate__fadeInUp"><img src="image/about-page-img.jpg" alt="doctor"></div>
+        <div class="about-text">
+            <div class="about-title wow animate__fadeInUp"> 
+            <h2><span>Oreo Hospital</span> isIt is a long established fact that a reader <br> will be distracted by the readable content.</h2></div>
+            <div class="about-p wow animate__fadeInUp">
+                <p>It is a long established fact that a reader will be distracted by the readable content more or <br> less normal distribution of letters opposed.</p>
+            </div>
+
+            <div class="about-descr wow animate__fadeInUp">
+                <div class="about-icon"><i class="fa-solid fa-heart"></i>
+                <div class="about-caption"><h4>Our Mission</h4></div>
+            </div>
+                <div class="about-article"><p>Reader will be distracted by the readable content of a page when looking at its <br> layout the point of using more or less normal distribution.</p></div>
+            </div>
+            <div class="about-descr wow animate__fadeInUp">
+                <div class="about-icon"><i class="fa-solid fa-eye"></i>
+                <div class="about-caption"><h4>Our Vision</h4></div>
+            </div>
+                <div class="about-article"><p>Reader will be distracted by the readable content of a page when looking at its <br> layout the point of using more or less normal distribution.</p></div>
+            </div>
+
+            <div class="about-like wow animate__fadeInUp">
+                <div class="about-like-icon">
+                <i class="fa-solid fa-thumbs-up"></i></div>
+                <div class="about-like-text">
+                <p>Idea of denouncing pleasure and praising.</p>
+                </div>
+            </div>
+            <div class="about-like wow animate__fadeInUp">
+                <div class="about-like-icon">
+                <i class="fa-solid fa-thumbs-up"></i></div>
+                <div class="about-like-text">
+                <p>Pleasure and praising pain was complete system..</p>
+                </div>
+            </div>
+            <div class="about-hours wow animate__fadeInUp">
+                <div class="open">
+                    <div class="about-hours-header">
+                    <div class="about-hours-icon">
+                        <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="about-hours-title">
+                    <h4>Opening Hours</h4></div>
+                </div>
+                        <div class="ul-hours">
+                            <div class="ul-days">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> Saturday</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Sunday</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Monday - Friday</li>
+                               
+                            </ul>
+                        </div>
+                            <div class="ul-clock">
+                                <ul>
+                                    <li>9:00 - 20:00</li>
+                                    <li>9:00 - 20:00</li>
+                                    <li>9:00 - 20:00</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="services-main1">
+        <div class="choose wow animate__fadeInLeft">
+            <h2><span class="why">Why</span> Choose Us</h2>
+            <p>Description text here...</p>
+        </div>
+        <div class="services-main2">
+
+
+        <div class="serv-card wow animate__fadeInLeft">
+            <div class="serv-icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <div class="serv-text">
+                <h4>Qualified Doctors</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has
+                    been
+                    the industry's</p>
+            </div>
+        </div>
+
+        <div class="serv-card wow animate__fadeInLeft">
+            <div class="serv-icon">
+                <i class="fa-solid fa-square-plus"></i>
+            </div>
+            <div class="serv-text">
+                <h4>Blood Bank</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of
+                    a
+                    page when looking at</p>
+            </div>
+        </div>
+
+        <div class="serv-card wow animate__fadeInLeft">
+            <div class="serv-icon">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div class="serv-text">
+                <h4>Modern Clinic</h4>
+                <p>How all this mistaken idea denoucing pleasure and praisings pain was born complete
+                    account
+                    expound.</p>
+            </div>
+        </div>
+
+        <div class="serv-card wow animate__fadeInLeft">
+            <div class="serv-icon">
+                <i class="fa-solid fa-thumbs-up"></i>
+            </div>
+            <div class="serv-text">
+                <h4>Emergency</h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                    piece of
+                    classical</p>
+            </div>
+        </div>
+
+        <div class="serv-card wow animate__fadeInLeft">
+            <div class="serv-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="serv-text">
+                <h4>24x7 Service</h4>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration</p>
+                </div>
+            </div>
+            
+            <div class="serv-card wow animate__fadeInLeft">
+                <div class="serv-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="serv-text">
+                    <h4>Health Care</h4>
+                    <p>How all this mistaken idea denoucing pleasure and praisings pain was born complete
+                        account
+                    expound.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clients">
+    <div class="human">
+        <div class="icons"><i class="fa-solid fa-user"></i></div>
+        <h1>652</h1>
+        <p>Happy Clients</p>
+    </div>
+    <div class="heart">
+        <div class="icons"><i class="fa-solid fa-heart"></i></div>
+        <h1>7652</h1>
+        <p>Heart Transplant</p>
+    </div>
+    <div class="like">
+        <div class="icons"><i class="fa-solid fa-thumbs-up"></i></div>
+        <h1>52</h1>
+        <p>Years Of Experience</p>
+    </div>
+    <div class="smile">
+        <div class="icons"><i class="fa-regular fa-face-grin"></i></div>
+        <h1>7652</h1>
+        <p>Well Smiley Faces</p>
+    </div>
+</div>
+
+
+
+<div class="txtabout">
+    <div class="team wow animate__fadeInLeft">
+        <h2><span class="meet">Our</span> Location</h2>
+        <p>Description text here...</p>
+    </div>
+    <div class="our wow animate__fadeInRight">
+        <p><span class="hospitaltxt">Oreo Hospital</span> The wise man therefore always holds in these matters
+            to
+            this principle of selection: he <br> rejects pleasures to secure.</p>
+    </div>
+</div>
+
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5131540.295065959!2d5.965949926802538!3d51.09674495268414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a721ec2b1be6b%3A0x75e85d6b8e91e55b!2z0JPQtdGA0LzQsNC90LjRjw!5e0!3m2!1sru!2s!4v1649352957723!5m2!1sru!2s"></iframe>
+    </div>
+
+    <div class="txtabout">
+        <div class="team wow animate__fadeInLeft">
+            <h2><span class="meet">Meet</span> Our Team</h2>
+            <p>Description text here...</p>
+        </div>
+        <div class="our wow animate__fadeInRight">
+            <p><span class="hospitaltxt">Oreo Hospital</span> The wise man therefore always holds in these matters
+                to
+                this principle of selection: he <br> rejects pleasures to secure.</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <div class="card wow animate__flipInY">
+                <div class="card-img"><img src="image/doctor1.png" alt=""></div>
+                <div class="card-title">
+                    <h4>Dr. John</h4>
+                </div>
+                <div class="card-text">
+                    <p>Dentist</p>
+                </div>
+                <div class="card-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="card-btn"><button>View More</button></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card wow animate__flipInY">
+                <div class="card-img"><img src="image/doctor2.png" alt=""></div>
+                <div class="card-title">
+                    <h4>Dr. Amelia</h4>
+                </div>
+                <div class="card-text">
+                    <p>Gynecologist</p>
+                </div>
+                <div class="card-icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="card-btn"><button>View More</button></div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card wow animate__flipInY">
+                <div class="card-img"><img src="image/doctor3.png" alt=""></div>
+                <div class="card-title">
+                    <h4>Dr. Jack</h4>
+                </div>
+                <div class="card-text">
+                    <p>Audiology</p>
+                </div>
+                <div class="card-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+                <div class="card-btn"><button>View More</button></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card wow animate__flipInY">
+                <div class="card-img"><img src="image/doctor4.png" alt=""></div>
+                <div class="card-title">
+                    <h4>Dr. Charlie</h4>
+                </div>
+                <div class="card-text">
+                    <p>Dentist</p>
+                </div>
+                <div class="card-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="card-btn"><button>View More</button></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+        <div class="reg-form wow animate__fadeInUp" data-wow-duration="5s">
+            <form action="">
+                <input type="text" placeholder="your name">
+                <input type="text" placeholder="your email">
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="footer wow animate__fadeInUpBig">
+            <div class="part1">
+                <div class="part1-title"><h4>About Hospitals</h4></div>
+                <div class="part1-text"><p>The relentless service of Hospitals in the past 25 <br> years taken health care to the most modern levels <br> in the region catering to urban & rural. 
+                  <br>  <br> A Health Care Provider of Western Approach, <br> Hospitals is the most trusted multispecialty <br> hospital.</p></div>
+            </div>
+            <div class="part2">
+                <div class="part2-title"><h4>USefull Links</h4></div>
+                <div class="part2-ul">
+                    <div class="row-ul"> 
+                        <div class="ul1">
+                            <ul>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Consultants</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Working Hours</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Procedures</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Special Offers</a></li>
+                            </ul>
+                        </div>
+                        <div class="ul2">
+                            <ul>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Healthy Foods</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Appointments</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Latest News</a></li>
+                                <li><a href="#text"><i class="fa-solid fa-angle-right"></i> Certificates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part3"> 
+                <div class="part3-title"><h4>Contact Details</h4></div>
+                    <div class="footer-icons">   
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>  Park Drive, Varick Str NY 10012, USA</li>
+                            <li><i class="fa-solid fa-envelope"></i>  Getwell@Hospitals.com</li>
+                            <li><i class="fa-solid fa-phone"></i> (123) 0200 12345 &amp; 7890</li>
+                            <li><i class="fa-solid fa-clock"></i>  Mon-Friday: 9am to 18pm</li>
+                            <li><i class="fa-solid fa-clock"></i>  Sat-Sunday: 10am to 16pm</li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
+</body>
+</html>

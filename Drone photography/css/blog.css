@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+/* Rules */
+
+button:hover {
+    opacity: 0.9;
+}
+
+p {
+    padding: 10px 0px;
+    color: #f2f2f2;
+}
+
+
+/* Header menu */
+/* header.css */
+
+
+/* Project */
+
+.main1 {
+
+    background-color: #3f3f3f21;
+    color: white;
+    background-image: url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg3.png);
+    background-position: bottom right;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arrow1,
+.descr,
+.arrow2 {
+    margin-top: 120px;
+    /* padding: 20px; */
+
+}
+
+.main1 .descr {
+    text-align: center;
+
+}
+
+.main1 .descr h1 {
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+
+}
+
+.main1 .descr p {
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.main1 .descr button {
+    padding: 17px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(231, 136, 70) 20%, rgba(213, 122, 171) 74%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.main1 .descr button:hover {
+    opacity: 0.8;
+}
+
+.arrow1,
+.arrow2 {
+    margin-top: 182px;
+}
+
+.arrow1 {
+    margin-right: 300px;
+}
+
+.arrow2 {
+    margin-left: 300px;
+}
+
+.arrow1 p,
+.arrow2 p {
+    font-size: 40px;
+
+}
+
+.arrow1 p:hover,
+.arrow2 p:hover {
+    color: #E6884C;
+}
+
+/* Main 2 */
+.main2{
+    display: flex;
+    margin: auto;
+}
+.main2-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.main2-cards .main2-card1{
+    width: 300px;
+    height: auto;
+    margin: 15px;
+    border-radius: 7px;
+    background-color: #282828;
+    /* padding: 10px; */
+    
+}
+
+.main2-cards .main2-card1:hover{
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.main2-cards .main2-card1-txt{
+    font-family: 'Fjalla One', sans-serif;
+
+    padding: 15px;
+    color: #f2f2f2;
+}
+
+
+.main2-cards .main2-card1-txt p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.main2-cards .main2-card1-txt .main2-card1-read-more{
+    font-family: 'Fjalla One', sans-serif;
+
+    color: #E6884C;
+    cursor: pointer;
+}
+
+.main2-cards .main2-card1 img{
+    border-radius: 7px;
+    width: 300px;
+    padding: 0;
+}
+
+
+
+
+/* Quest Box */
+
+.quest-box {
+    margin: auto;
+    background-color: #000;
+    background-image: url(https://kitpro.site/splendid/wp-content/uploads/sites/60/2021/12/bg.png);
+    width: 950px;
+    /* padding: 10px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px 5px #000000;
+  }
+  
+  .quest-box .quest-descr {
+    line-height: 1.5;
+    margin: 50px;
+  }
+  
+  .quest-box .quest-descr h2 {
+    color: #E6884C;
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .quest-box .quest-descr h1 {
+    color: #fff;
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .quest-button button {
+    padding: 17px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(231, 136, 70) 20%, rgba(213, 122, 171) 74%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 70px;
+  }
+  
+  
+  /* Footer */
+  /* footer.css */
+
+
+    /* Responsive */
+
+@media (min-width: 300px) {
+  
+    .arrow1,.arrow2 {
+      margin-top: 182px;
+  }
+  
+  .arrow1 {
+      margin-right: 10px;
+  }
+  
+  .arrow2 {
+      margin-left:  10px;
+  }
+  
+  .arrow1 p, .arrow2 p {
+      font-size: 20px;
+  }
+  
+    .quest-box {
+      width: 300px;
+      text-align: center;
+    }
+    .quest-button button {
+      margin-top: 5px;
+    }
+    }
+  
+  @media (min-width: 576px) { 
+  
+    .arrow1,.arrow2 {
+      margin-top: 182px;
+  }
+  
+  .arrow1 {
+      margin-right: 50px;
+  }
+  
+  .arrow2 {
+      margin-left:  50px;
+  }
+  
+  .arrow1 p, .arrow2 p {
+      font-size: 40px;
+  
+  }
+
+    .quest-box {
+      width: 500px;
+    }
+    .quest-button button {
+      margin-top: 5px;
+    }
+   }
+  
+  @media (min-width: 768px) { 
+  
+    .arrow1,.arrow2 {
+      margin-top: 182px;
+  }
+  
+  .arrow1 {
+      margin-right: 100px;
+  }
+  
+  .arrow2 {
+      margin-left:  100px;
+  }
+  
+  .arrow1 p, .arrow2 p {
+      font-size: 40px;
+  
+  }
+  
+    .quest-box {
+      width: 700px;
+    }
+    .quest-button button {
+      margin-top: 70px;
+    }
+   }
+  
+  @media (min-width: 992px) {  
+  
+  
+    .arrow1,.arrow2 {
+      margin-top: 182px;
+  }
+  
+  .arrow1 {
+      margin-right: 200px;
+  }
+  
+  .arrow2 {
+      margin-left:  200px;
+  }
+  
+  .arrow1 p, .arrow2 p {
+      font-size: 40px;
+  
+  }
+    .quest-button button {
+      margin-top: 70px;
+    }
+  
+    .quest-box {
+      width: 700px;
+    }
+    .quest-button button {
+      margin-top: 70px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+  
+  
+    .arrow1,.arrow2 {
+      margin-top: 182px;
+  }
+  
+  .arrow1 {
+      margin-right: 300px;
+  }
+  
+  .arrow2 {
+      margin-left:  300px;
+  }
+  
+  .arrow1 p, .arrow2 p {
+      font-size: 40px;
+  
+  }
+  
+    .quest-button button {
+      margin-top: 70px;
+    }
+   }
+  
+  @media (min-width: 1400px) {
+  
+  
+    .arrow1,.arrow2 {
+      margin-top: 182px;
+  }
+  
+  .arrow1 {
+      margin-right: 300px;
+  }
+  
+  .arrow2 {
+      margin-left:  300px;
+  }
+  
+  .arrow1 p, .arrow2 p {
+      font-size: 40px;
+  
+  }
+  
+    .quest-button button {
+      margin-top: 70px;
+    }
+   }
